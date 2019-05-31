@@ -4,17 +4,19 @@ import pygame
 import sys
 import time
 
+# To install dependencies, run the following (tested on Raspbian):
+# sudo apt-get install python-gpiozero python-pygame
+
 # Pins to use. Read the gpiozero manual on how to specify pins, and
 # consider that older models only offer a smaller number of pins, as
 # can be seen on Wikipedia.
 # WARNING: Choosing/wiring the wrong pins might damage your Raspberry Pi!
 # https://gpiozero.readthedocs.io/en/stable/recipes.html#pin-numbering
 # https://en.wikipedia.org/wiki/Raspberry_Pi#General_purpose_input-output_(GPIO)_connector
-# TODO: Extend this to at least 8 pins.
-PINS = [ 7, 14 ]
+PINS = [ "GPIO4", "GPIO18", "GPIO2", "GPIO24" ]
 
 if sys.argv[0] != __file__ or len(sys.argv) < 2:
-    print "Run this file as follows:\n\tpython " + __file__ + " [list of sound files]"
+    print "Run this file as follows:\n\tpython " + __file__ + " [list of sound files separated by space]"
 
 args = sys.argv[1:]
 print args
