@@ -1,4 +1,6 @@
 #!/bin/bash
+mkdir freewavesamples
+cd freewavesamples
 wget \
   https://freewavesamples.com/files/Alesis-Fusion-Bass-C3.wav \
   https://freewavesamples.com/files/Casio-CZ-5000-Human-Voice-C4.wav \
