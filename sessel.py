@@ -13,7 +13,12 @@ import time
 # WARNING: Choosing/wiring the wrong pins might damage your Raspberry Pi!
 # https://gpiozero.readthedocs.io/en/stable/recipes.html#pin-numbering
 # https://en.wikipedia.org/wiki/Raspberry_Pi#General_purpose_input-output_(GPIO)_connector
-PINS = [ "GPIO4", "GPIO18", "GPIO2", "GPIO24" ]
+PINS = [
+    "GPIO4" , # PIN7
+    "GPIO18", # PIN12
+    "GPIO27", # PIN13
+    "GPIO24"  # PIN18
+]
 
 if sys.argv[0] != __file__ or len(sys.argv) < 2:
     print "Run this file as follows:\n\tpython " + __file__ + " [list of sound files separated by space]"
