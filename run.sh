@@ -4,12 +4,12 @@ set -ex
 
 for i in 1 2 3 4
 do
-	if [ ! -e ${i}.wav ]
+	if [ ! -e ${i}.ogg ]
 	then
-		echo ${i}.wav missing!
+		echo ${i}.ogg missing!
 		read
 		exit
 	fi
 done
 
-python sessel.py 1.wav 2.wav 3.wav 4.wav
+python sessel.py 1.ogg 2.ogg 3.ogg 4.ogg
